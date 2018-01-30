@@ -17,7 +17,7 @@
 * git add -A                            
 * git commit -m "first commit"
 * git commit --amend -m "Edit the message of the last change uploaded"
-* git remote add origin git@github.com:leone2016/makipura.git
+* git remote add origin https://github.com/leone2016/adminpro-udemy.git
 * git push -u origin master 
 
 ### Create new Branchs  ##
@@ -34,17 +34,16 @@
 
 #### push an existing repository from the command line gitHUB - bitBUCKET ###
 
-* git remote add origin git@github.com:leone2016/makipura.git
+* git remote add origin https://github.com/leone2016/adminpro-udemy.git
 * git remote -v
 * git push origin nameOfBranch
 * git push origin nameOfBranch -f
 
 #### cone an existing repository from the command line gitHUB - bitBUCKET ###
-* git clone https://leone2015@bitbucket.org/leone2015/tesis40.git (este link esta en la parte superior)
+* git clone https://github.com/leone2016/adminpro-udemy.git (este link esta en la parte superior)
 ### Tags anotadas Ejemplos###
-* git tag -a v0.8 -m "mensaje con mayor informacion v0.8 el numero de 0.8 depende a numero de commits realizados" 
-* git tag -a v0.1 -m "mensaje a la primera subida"
+* git tag -a v1.0.0 -m "mensaje con mayor informacion v0.8 el numero de 0.8 depende a numero de commits realizados" 
 
 ### subir tags a bitbucket ##
-* git push origin v0.8
-* git push origin --tags 
+* git push  v1.0.0
+* git push --tags 
