@@ -16,6 +16,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 import { APP_ROUTES } from './app.routes';
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register/register.component';
+import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -23,18 +24,12 @@ import { RegisterComponent } from './login/register/register.component';
     AppComponent,
     LoginComponent,
     NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
     RegisterComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
