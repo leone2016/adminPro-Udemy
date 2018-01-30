@@ -1,9 +1,9 @@
 ## NOTAS EN RUTAS
-RouterModule.forRoot ()app.router)por ser una ruta principal (ForRoot)
-RouterModule -> SIEMPRE SE LO INGRESA EL EL IMPORT DE APP.MODULE.TS porque ahi se ingresan todos los modulos
+* RouterModule.forRoot ()app.router)por ser una ruta principal (ForRoot)
+* RouterModule -> SIEMPRE SE LO INGRESA EL EL IMPORT DE APP.MODULE.TS porque ahi se ingresan todos los modulos
 ## NOTAS GIT
 ### Config a Git ###
-#test#
+
 * git config --global user.name "write a Name Account"
 * git config --global user.email "write a email"
 * git config --global color.ui true
@@ -12,28 +12,39 @@ RouterModule -> SIEMPRE SE LO INGRESA EL EL IMPORT DE APP.MODULE.TS porque ahi s
 #### Create a new repository on the command line ###
 
 * git init
-* git add -am "message of commit"        => twice steps in one
-* git add nameOfFile                     =>Upload only a specific file
-* git add -A                             =>Upload all files and folders
+* git add -am "message of commit"       
+* git add nameOfFile                    
+* git add -A                            
 * git commit -m "first commit"
+* git commit --amend -m "Edit the message of the last change uploaded"
 * git remote add origin git@github.com:leone2016/makipura.git
 * git push -u origin master 
 
 ### Create new Branchs  ##
-* git checkout  - b nameOfBranch         =>create and move to the new branch
-* git branch nameOfBranch                =>create a new branch
-* git checkout nameOfBranch              =>move to the new branch
+* git checkout  - b nameOfBranch         
+* git branch nameOfBranch                
+* git checkout nameOfBranch      
 
+### Moverse a travez de los commits (versionamiento) ###
 
-#### push an existing repository from the command line ###
+* git log
+* git checkout [copiar el codigo commit]
+* git checkout [nombre de la rama]
+* git help [atributo que se desea tener documentacion]        
 
-git remote add origin git@github.com:leone2016/makipura.git
-git push -u origin master 
+#### push an existing repository from the command line gitHUB - bitBUCKET ###
 
-## Git 
-# Git tag
-git tag -a v1.0.0 -m "mensaje referente a la version que se encuentra estable (PRODUCCION)"
-git tag         => muesta todos los tag creados en el repositorio
-git push --tag  => carga los tags a gitHub
+* git remote add origin git@github.com:leone2016/makipura.git
+* git remote -v
+* git push origin nameOfBranch
+* git push origin nameOfBranch -f
 
-git push        => carga todo al repositorio github no es necesario colocar git push origin master 
+#### cone an existing repository from the command line gitHUB - bitBUCKET ###
+* git clone https://leone2015@bitbucket.org/leone2015/tesis40.git (este link esta en la parte superior)
+### Tags anotadas Ejemplos###
+* git tag -a v0.8 -m "mensaje con mayor informacion v0.8 el numero de 0.8 depende a numero de commits realizados" 
+* git tag -a v0.1 -m "mensaje a la primera subida"
+
+### subir tags a bitbucket ##
+* git push origin v0.8
+* git push origin --tags 
