@@ -4,6 +4,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { ShareModule } from '../shared/share.module';
+import { PAGES_ROUTES } from './pages.routes';
 @NgModule({
         declarations:[//trabaja a dentro de la carpata pages
             DashboardComponent,
@@ -18,7 +19,8 @@ import { ShareModule } from '../shared/share.module';
             PagesComponent
         ],
         imports:[
-            ShareModule
+            ShareModule,
+            PAGES_ROUTES
         ]
 
 })
