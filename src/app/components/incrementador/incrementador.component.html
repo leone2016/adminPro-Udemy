@@ -4,7 +4,7 @@
     <div class="input-group-prepend">
         <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)"> <i class="mdi mdi-minus" ></i></button>
     </div>
-    <input type="text" [(ngModel)]="porcentaje" name="porcentaje" class="form-control">
+    <input #txtProgress type="number" (ngModelChange)="cambio($event)" [(ngModel)]="porcentaje" name="porcentaje" class="form-control" min="1" max="100">
     <div class="input-group-append">
         <button class="btn btn-primary" type="button" (click)="cambiarValor(5)"> <i class="mdi mdi-plus" ></i></button>
     </div>

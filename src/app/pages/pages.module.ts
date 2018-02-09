@@ -10,13 +10,17 @@ import { FormsModule } from '@angular/forms';
 //temporal 
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
+//ng2-chart
+import { ChartsModule } from 'ng2-charts';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 @NgModule({
         declarations:[//trabaja a dentro de la carpata pages
             DashboardComponent,
             ProgressComponent,
             Graficas1Component,
             PagesComponent,
-            IncrementadorComponent
+            IncrementadorComponent,
+            GraficoDonaComponent
         ],
         exports:[//trabaja fuera de la carpeta pages
             DashboardComponent,
@@ -27,7 +31,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         imports:[
             ShareModule,
             PAGES_ROUTES,
-            FormsModule
+            FormsModule,
+            ChartsModule
         ]
 
 })

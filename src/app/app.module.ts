@@ -12,6 +12,7 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 /* import { IncrementadorComponent } from './components/incrementador/incrementador.component';
  */import { FormsModule } from '@angular/forms';
+import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    /* IncrementadorComponent */
+/*     GraficoDonaComponent,
+ */    /* IncrementadorComponent */
   ],
   imports: [
     BrowserModule,
