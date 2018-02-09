@@ -13,6 +13,7 @@ import { PagesModule } from './pages/pages.module';
 /* import { IncrementadorComponent } from './components/incrementador/incrementador.component';
  */import { FormsModule } from '@angular/forms';
 import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+import { SettingsService } from './services/settings.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
     PagesModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -44,6 +44,15 @@
 ### Tags anotadas Ejemplos###
 * git tag -a v1.0.0 -m "mensaje con mayor informacion v0.8 el numero de 0.8 depende a numero de commits realizados" 
 
-### subir tags a bitbucket ##
+### subir tags a bitbucket Versiones estables##
 * git push  v1.0.0
-* git push --tags 
+* git push --tags
+ ### crear otra vesion estable para produccion## 
+* git tag -a v1.1.0 -m "version Input, Output y View Child" 
+
+
+## NOTAS del curso
+### crear un componente y se cree en un module específico 
+* ng g c pages/accountSettings -m="pages/pages.module.ts" --spec=false -is
+### crea un servicio y lo registra un modulo en especifico
+* ng g s services/settings -m="app.module.ts" --spec=false
