@@ -13,7 +13,8 @@ import { PagesModule } from './pages/pages.module';
 /* import { IncrementadorComponent } from './components/incrementador/incrementador.component';
  */import { FormsModule } from '@angular/forms';
 import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
-import { SettingsService } from './services/settings.service';
+import {ServiceModule} from "./services/service.module";
+
 
 
 @NgModule({
@@ -28,9 +29,10 @@ import { SettingsService } from './services/settings.service';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

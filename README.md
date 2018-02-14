@@ -56,3 +56,7 @@
 * ng g c pages/accountSettings -m="pages/pages.module.ts" --spec=false -is
 ### crea un servicio y lo registra un modulo en especifico
 * ng g s services/settings -m="app.module.ts" --spec=false
+### crear un MODULO PARA UNIR SERVICIOS ### 
+
+ng g m services/service --spec=false --flat (crea el servicio --flat para NO crear carpeta)
+
