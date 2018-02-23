@@ -14,6 +14,8 @@ import { PagesModule } from './pages/pages.module';
  */import { FormsModule } from '@angular/forms';
 import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 import {ServiceModule} from "./services/service.module";
+import {RouterModule} from "@angular/router";
+import {CommonModule} from "@angular/common";
 
 
 
@@ -30,7 +32,9 @@ import {ServiceModule} from "./services/service.module";
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
