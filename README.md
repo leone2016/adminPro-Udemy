@@ -60,3 +60,5 @@
 
 ng g m services/service --spec=false --flat (crea el servicio --flat para NO crear carpeta)
 
+## en la sesscion 8 se creo las promesas 
+* ng g c pages/promesas --spec=false -is
