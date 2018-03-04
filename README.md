@@ -61,4 +61,9 @@
 ng g m services/service --spec=false --flat (crea el servicio --flat para NO crear carpeta)
 
 ## en la sesscion 8 se creo las promesas 
-* ng g c pages/promesas --spec=false -is
+* ng g c pages/promesas --spec=false -is 
+
+## Importaciones que me dieron error
+
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/map';
